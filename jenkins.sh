@@ -3,6 +3,7 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt update
 sudo apt install jenkins -y
+sleep 10 # jenkins-cli download fails otherwise
 
 # Install required plug-ins:
 JENKINS_URL="http://127.0.0.1:8080/"
@@ -16,3 +17,6 @@ java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin bitbucket --username "$
 java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin aws-credentials --username "$USERNAME" --password "$PASSWORD"
 
 sudo service jenkins restart
+
+PUBLIC_IP=$(curl ipinfo.io/ip)
+echo "Login into Jenkins: https://$PUBLIC_IP, using password: $PASSWORD, ignore certificate warning, and skip setup!"
