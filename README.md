@@ -6,12 +6,26 @@
 * This repo focuses on Jenkins Build Server setup
 
 # Setup on Ubuntu 16.06
+* Login into vanilla instance of Ubuntu 16.06
+* Clone repo:
+```
+git clone https://github.com/vkhazin/dotnetcore-build-jenkins.git
+```
+* Run commands:
+```
+chmod +x ./dotnetcore-build-jenkins/*.sh
+./dotnetcore-build-jenkins/nginx.sh
+./dotnetcore-build-jenkins/docker.sh
+./dotnetcore-build-jenkins/aws-cli.sh
+./dotnetcore-build-jenkins/dotnetcore.sh
+./dotnetcore-build-jenkins/jenkins.sh
+```
 
 ## Dynamic Dns (optional)
 http://vkhazin.postach.io/post/ddclient-namecheap-com-on-ubuntu-16-06
 
 ## NginX
-* NginX reverse proxy is somewhat easier to setup
+* NginX reverse proxy is somewhat easier to setup than to configure ssl on jenkins
 * See [nginx.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/nginx.sh) for details
 
 ## Docker Support

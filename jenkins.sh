@@ -18,5 +18,10 @@ java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin aws-credentials --usern
 
 sudo service jenkins restart
 
+# Grant docker permissions to Jenkins user
+sudo groupadd docker
+sudo usermod -a -G docker jenkins
+sudo service docker restart
+
 PUBLIC_IP=$(curl ipinfo.io/ip)
 echo "Login into Jenkins: https://$PUBLIC_IP, using password: $PASSWORD, ignore certificate warning, and skip setup!"
