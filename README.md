@@ -2,7 +2,7 @@
 
 # TL;DR
 * Objective was to setup a [CD](https://en.wikipedia.org/wiki/Continuous_delivery) and then [CI](https://en.wikipedia.org/wiki/Continuous_integration) for dotnet core web api running in docker images on [Aws Ecs](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
-* Proof-of-concept project [dotnet core web api in a docker container]((https://bitbucket.org/vk-smith/dotnetapi/src/master/README.md)
+* Proof-of-concept project [dotnet core web api in a docker container](https://bitbucket.org/vk-smith/dotnetapi/src/master/README.md)
 * This repo focuses on Jenkins Build Server setup
 
 # Setup on Ubuntu 16.06
