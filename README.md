@@ -20,26 +20,13 @@ chmod +x ./dotnetcore-build-jenkins/*.sh
 ./dotnetcore-build-jenkins/dotnetcore.sh
 ./dotnetcore-build-jenkins/jenkins.sh
 ```
+* After installation login using https://public-ip-address with password listed at the end of setup script
+* Pss! Skip the start-up window - you have all required plug-ins installed already!
 
-## Dynamic Dns (optional)
-http://vkhazin.postach.io/post/ddclient-namecheap-com-on-ubuntu-16-06
-
-## NginX
+## Why NginX?
+* Jenkins is not as easy to configure to use https: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins that's why nginx was used to encrypt access
 * NginX reverse proxy is somewhat easier to setup than to configure ssl on jenkins
 * See [nginx.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/nginx.sh) for details
 
-## Docker Support
-* See [docker.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/docker.sh) for details
-* Jenkins user is added to docker group as part of the script to enable access to docker daemon
-
-## Aws Cli
-* See [aws-cli.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/aws-cli.sh) for details
-
-## DotNet Core SDK
-* See [dotnetcore.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/dotnetcore.sh) for details
-
-## Jenkins
-* See [jenkins.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/jenkins.sh)
-* Jenkins is not as easy to configure to use https: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins that's why nginx was used to encrypt access
-* After installation login using https://public-ip-address with password listed at the end of setup script
-* Skip the start-up window - you have all required plug-ins installed already!
+# Dynamic Dns (optional)
+* Should you be interested in EC2 Dynamic Dns integration please see: http://vkhazin.postach.io/post/ddclient-namecheap-com-on-ubuntu-16-06
