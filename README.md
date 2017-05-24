@@ -21,7 +21,7 @@ chmod +x ./dotnetcore-build-jenkins/*.sh
 ./dotnetcore-build-jenkins/jenkins.sh
 ```
 * After installation login using https://public-ip-address with password listed at the end of setup script
-* Pss! Skip the start-up window - you have all required plug-ins installed already!
+* Psss! Skip the start-up window - you have all required plug-ins installed already!
 
 ## Why NginX?
 * Jenkins is not as easy to configure to use https: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins that's why nginx was used to encrypt access
