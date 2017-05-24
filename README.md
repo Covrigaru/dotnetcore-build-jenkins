@@ -11,7 +11,7 @@ http://vkhazin.postach.io/post/ddclient-namecheap-com-on-ubuntu-16-06
 
 ## NginX
 * NginX reverse proxy is somewhat easier to setup
-* See [nginx.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/nginz.sh) for details
+* See [nginx.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/nginx.sh) for details
 
 ## Docker Support
 * See [docker.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/docker.sh) for details
@@ -25,6 +25,6 @@ http://vkhazin.postach.io/post/ddclient-namecheap-com-on-ubuntu-16-06
 
 ## Jenkins
 * See [jenkins.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/jenkins.sh)
-* Jenkins is not as easy to configure to use https: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
+* Jenkins is not as easy to configure to use https: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins that's why nginx was used to encrypt access
 * After installation login using https://public-ip-address with password listed at the end of setup script
 * Skip the start-up window - you have all required plug-ins installed already!
