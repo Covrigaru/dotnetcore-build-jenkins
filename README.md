@@ -71,3 +71,10 @@ Successfully built 2077316da135
 }
 Finished: SUCCESS
 ```
+* To configure Bibucket webhook for building on every commit log-in to bitbucket
+* Open the repository Settings->Webhooks and add new web hook with following url:
+https://ip or dns entry/bitbucket-hook/
+![alt text](./screen-capture/bitbucket-webhook.png "Bitbucket Webhook")
+* If all is in order any following commit to Bitbucket will trigger an automated build using Jenkins
+
+# Happy CD/CI!
