@@ -24,8 +24,8 @@ chmod +x ./dotnetcore-build-jenkins/*.sh
 * Psss! Skip the start-up window - you have the required plug-ins installed already!
 
 ## Why NginX?
-* Jenkins is not as easy to configure to use https: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins that's why nginx was used to encrypt access
-* NginX reverse proxy is somewhat easier to setup than to configure ssl on jenkins
+* Jenkins is not as easy to configure to use encryption: https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins
+* NginX reverse proxy is somewhat easier to setup and to encrypt traffic to Jenkins
 * See [nginx.sh](https://github.com/vkhazin/dotnetcore-build-jenkins/blob/master/nginx.sh) for details
 
 # Dynamic Dns (optional)
