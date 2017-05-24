@@ -17,12 +17,11 @@ java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin bitbucket --username "$
 # Required for using Aws Credentials
 java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin aws-credentials --username "$USERNAME" --password "$PASSWORD"
 
-sudo service jenkins restart
-
 # Grant docker permissions to Jenkins user
 sudo groupadd docker
 sudo usermod -a -G docker jenkins
 sudo service docker restart
+sudo service jenkins restart
 
 PUBLIC_IP=$(curl ipinfo.io/ip)
 echo "Login into Jenkins: https://$PUBLIC_IP, using password: $PASSWORD, ignore certificate warning, and skip setup!"
