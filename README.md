@@ -14,10 +14,10 @@ git clone https://github.com/vkhazin/dotnetcore-build-jenkins.git
 * Run commands:
 ```
 chmod +x ./dotnetcore-build-jenkins/*.sh
-./dotnetcore-build-jenkins/nginx.sh
-./dotnetcore-build-jenkins/docker.sh
-./dotnetcore-build-jenkins/aws-cli.sh
-./dotnetcore-build-jenkins/dotnetcore.sh
+./dotnetcore-build-jenkins/nginx.sh && \
+./dotnetcore-build-jenkins/docker.sh && \
+./dotnetcore-build-jenkins/aws-cli.sh && \
+./dotnetcore-build-jenkins/dotnetcore.sh && \
 ./dotnetcore-build-jenkins/jenkins.sh
 ```
 * After installation login using https://public-ip-address with password listed at the end of setup script
