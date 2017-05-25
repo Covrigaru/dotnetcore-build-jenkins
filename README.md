@@ -13,7 +13,7 @@ git clone https://github.com/vkhazin/dotnetcore-build-jenkins.git
 ```
 * Run commands:
 ```
-chmod +x ./dotnetcore-build-jenkins/*.sh
+chmod +x ./dotnetcore-build-jenkins/*.sh && \
 ./dotnetcore-build-jenkins/nginx.sh && \
 ./dotnetcore-build-jenkins/docker.sh && \
 ./dotnetcore-build-jenkins/aws-cli.sh && \
@@ -75,6 +75,7 @@ Finished: SUCCESS
 * Open the repository Settings->Webhooks and add new web hook with following url:
 https://ip or dns entry/bitbucket-hook/
 ![alt text](./screen-capture/bitbucket-webhook.png "Bitbucket Webhook")
+* Check 'Skip certificate verification' check-box as we are using a self-signed cert
 * If all is in order any following commit to Bitbucket will trigger an automated build using Jenkins
 
 # Happy CD/CI!
