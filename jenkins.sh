@@ -16,6 +16,8 @@ java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin dashboard-view --userna
 java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin bitbucket --username "$USERNAME" --password "$PASSWORD"
 # Required for using Aws Credentials
 java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin aws-credentials --username "$USERNAME" --password "$PASSWORD"
+# Required for using custom build container
+java -jar jenkins-cli.jar -s $JENKINS_URL install-plugin docker-custom-build-environment --username "$USERNAME" --password "$PASSWORD"
 
 # Grant docker permissions to Jenkins user
 sudo groupadd docker
