@@ -38,11 +38,9 @@ chmod +x ./dotnetcore-build-jenkins/*.sh && \
 ![alt text](./screen-capture/build-triggers.png "Build Triggers")
 * Under 'Build Environment'
    * Select 'Build inside a Docker container'
-   * Under 'Docker image to use' select 'Pull docker image from repository' and provide image tag: vkhazin/dotnetcore-build:1.1.1
-   * Under 'Advanced...' options add volumes to link docker-cli inside the container with docker-engine on the host
-   * Path on host: /var/run/docker.sock
-   * Path inside container: /var/run/docker.sock
-   * Container start commnad: /bin/cat, that to keep container running
+   * Under 'Docker image to use' select 'Pull docker image from repository' and provide image tag: vkhazin/dotnetcore-build:1.1.2
+   * User group: 'docker'
+   * Container start command: 'wrapdocker /bin/cat', that to keep container running
 ![alt text](./screen-capture/build-custom-image.png "Build Custom Image")
 * Under 'Build' section select 'Add build step' drop-down and select 'Execute shell':
 ![alt text](./screen-capture/build-step.png "Build Step")
