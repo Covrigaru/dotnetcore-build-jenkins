@@ -1,5 +1,5 @@
-# Jenkins + Container Setup on Ubuntu 16.06
-* Login into vanilla instance of Ubuntu 16.06
+# Jenkins + Container Setup on Ubuntu 16.04
+* Login into vanilla instance of Ubuntu 16.04
 * Clone the repo:
 ```
 git clone https://github.com/vkhazin/dotnetcore-build-jenkins.git
