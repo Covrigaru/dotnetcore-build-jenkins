@@ -42,6 +42,8 @@ chmod +x ./dotnetcore-build-jenkins/*.sh && \
    * Select 'Build inside a Docker container'
    * Under 'Docker image to use' select 'Pull docker image from repository' and provide image tag: vkhazin/dotnetcore-build:1.1.2
    * Select 'Advanced' button to display more options
+   * Check 'Run in privileged mode'
+   * Optionally check 'Verbose' for troubleshooting purposes
    * User group: 'docker'
    * Container start command: 'wrapdocker /bin/cat', that to keep container running
 ![alt text](./screen-capture/build-custom-image.png "Build Custom Image")
