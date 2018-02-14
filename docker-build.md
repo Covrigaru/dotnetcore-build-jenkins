@@ -34,7 +34,7 @@ chmod +x ./dotnetcore-build-jenkins/*.sh && \
 ![alt text](./screen-capture/project-name.png "Project name")
 * Select 'Ok' to continue
 * On the project configuration page scroll down to 'Source Code Management' and select 'Git' option
-* Paste repository url: https://vkhazin@bitbucket.org/vk-smith/dotnetapi.git and configure credentials if applicable
+* Paste repository url: https://vkhazin@bitbucket.org/vk-smith/dotnetcore-api.git and configure credentials if applicable
 ![alt text](./screen-capture/source-control.png "Source Control Management")
 * Under 'Build Triggers' select 'Build when a change is pushed to BitBucket':
 ![alt text](./screen-capture/build-triggers.png "Build Triggers")
