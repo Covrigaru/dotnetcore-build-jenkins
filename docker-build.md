@@ -5,7 +5,9 @@
 git clone https://github.com/vkhazin/dotnetcore-build-jenkins.git
 ```
 * Run commands:
+
 ```
+sudo apt update && \
 chmod +x ./dotnetcore-build-jenkins/*.sh && \
 ./dotnetcore-build-jenkins/nginx.sh && \
 ./dotnetcore-build-jenkins/docker.sh && \
