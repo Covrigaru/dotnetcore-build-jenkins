@@ -52,8 +52,10 @@ chmod +x ./dotnetcore-build-jenkins/*.sh && \
 * In the script text-area paste following commands:
 ```
 #!/usr/bin/env bash
-export AWS_ACCESS_KEY_ID=<replace with your id>
-export AWS_SECRET_ACCESS_KEY=<replace with your secret>
+export AWS_ACCESS_KEY_ID=<replace with your own>
+export AWS_SECRET_ACCESS_KEY=<replace with your own>
+export S3_BUCKET_NAME=smith-poc-deploy
+export S3_BUCKET_KEY=dotnetcore-api
 
 chmod +x ./ci-build.sh
 ./ci-build.sh
